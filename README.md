@@ -27,9 +27,7 @@ parallel codes which use the library, and also has some other benefits.
 If you use Linux, then pre-compiled binary packages are available for
 both the GSL and Meschach - just install the library packages and the
 corresponding \"-dev\" packages before installing GDAGsim, and
-everything should work fine. I hope to put together binary packages for
-GDAGsim for use with Debian GNU/Linux sometime in the next few months,
-but for now, building from source should be very straightforward.
+everything should work fine.
 
 The latest [documentation](Doc/gdag.pdf) is available in PDF format for
 on-line browsing. The theory behind GDAGsim is explained in the
