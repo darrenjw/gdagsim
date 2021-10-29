@@ -11,11 +11,11 @@ models. Full documentation and installation instructions are included
 with the package - see the README in the top-level directory. To use the
 library you will need to be reasonably familiar with programming in C,
 and it helps (but is not vital) if you\'ve used the [GNU Scientific
-Library](http://sourceware.cygnus.com/gsl/) (GSL) before. Note that you
+Library](https://www.gnu.org/software/gsl/) (GSL) before. Note that you
 must have the GSL (\>=1.0) installed and working correctly before
 attempting to install GDAGsim. Since there are (currently) no sparse
 matrix algorithms in the GSL, this version of GDAGsim also depends on
-the [Meschach](ftp://ftpmaths.anu.edu.au/pub/meschach/meschach.html)
+the [Meschach](http://homepage.divms.uiowa.edu/~dstewart/meschach/)
 matrix library. However, no familiarity with Meschach is required.
 
 The main change from 0.2 is a change of syntax for the stochastic
