@@ -1,0 +1,59 @@
+GDAGsim 0.3
+===========
+
+Installation
+------------
+
+You can't build this until you have both the GSL _and_ Meschach
+installed and working correctly. They are not included with this
+package - but both are free software.
+
+If you have the GSL and Meschach installed, just unpack the library
+with a command like:
+
+tar xvfz gdagsim-0.3.tgz
+
+Change into the "src" directory, have a look at the Makefile, and
+tweak anything that doesn't look quite right. Then try making the
+library with:
+
+make test
+
+If all goes well, all of the source files should compile, including a
+test program which should run, and finish with the message "All tests
+passed.". If it doesn't, then you need to fix stuff until it does -
+there's no point going any further until this works.
+
+To build the dynamic library, do:
+
+make libgdag.so
+
+If this doesn't work, you may need to hack the Makefile.
+
+Next set the LIBPATH in the Makefile to be somewhere in your library
+path where you want the library installing (/usr/lib might be a good
+choice), and also set the INCPATH to something more appropriate
+(/usr/include maybe). Then, as "root", do:
+
+make install
+
+You might also need to:
+
+ldconfig
+
+To test your installation, do:
+
+make libtest
+
+If the library test builds, runs and passes, CONGRATULATIONS! You have
+a working library. If not, some more hacking is required - you could
+try manually setting your LD_LIBRARY_PATH environment variable to the
+path of the library.
+
+See the documentation for information on how to use the library once
+you have it working. There are also some example files in the
+"examples" directory for practical illustrations of the use of the
+library.
+
+===========================================================================
+

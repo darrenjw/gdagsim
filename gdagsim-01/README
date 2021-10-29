@@ -1,0 +1,57 @@
+=============
+ GDAGsim 0.1
+=============
+
+http://www.staff.ncl.ac.uk/d.j.wilkinson/software/
+
+(C) 2000, Darren J Wilkinson
+
+This is FREE SOFTWARE - see the file "copyright" for details.
+
+GDAGsim is a C library for building, analysing and block-sampling
+Gaussian Directed Acyclic Graph (GDAG) models. It can be used for
+construction of efficient MCMC schemes for inference in large linear
+models, or for Bayes linear analysis of large stochastic systems.
+
+If you are interested in Gaussian Markov Random Fields (GMRFs), you
+should use Havard Rue's GMRFsim library. This software is only for DAG
+models.
+
+The library depends on the GNU Scientific Library (GSL). You will not
+be able to get this software to work unless you already have the GSL
+installed and working correctly.
+
+The software works by building the (sparse) precision matrix for the
+latent (unobserved) variables conditional on any observations, and
+then computing with it. This current implementation stores the full
+matrix, and operates on it using dense matrix algorithms. This is VERY
+inefficient in terms of both storage and computation time. A
+sparse-matrix version is currently under development, and will make
+use of the BLAST Sparse BLAS standard as soon as a reference
+implementation becomes available. It is intended that the sparse
+implementation will have EXACTLY the same interface as the current
+implementation, so that any code developed for this software will link
+against the new improved library when it becomes available. The
+current system is practical for problems involving up to 1,000 latent
+(unobserved) variables. The sparse-matrix implementation should handle
+problems involving 100,000 variables or more. Versions of the library
+for massively parallel supercomputers are also planned (for the
+analysis of huge spatio-temporal models), but not in the very near
+future.
+
+Installation instructions are given in the file "INSTALL", a user
+guide can be found in the directory "doc", and the examples from the
+user guide can be found in the directory "examples".
+
+If you use the library, find any bugs, have any bug-fixes, comments,
+suggestions etc, please let me know... Thanks to Stephen Yeung for a
+couple of bug reports and fixes.
+
+
+Darren Wilkinson, 22/11/2000
+
+
+d.j.wilkinson@ncl.ac.uk
+
+http://www.staff.ncl.ac.uk/d.j.wilkinson/
+

@@ -1,0 +1,53 @@
+=============
+ GDAGsim 0.3
+=============
+
+http://www.staff.ncl.ac.uk/d.j.wilkinson/software/
+
+(C) 2000-2002, Darren J Wilkinson
+
+This is FREE SOFTWARE - see the file "copyright" for details.
+
+GDAGsim is a C library for building, analysing and block-sampling
+Gaussian Directed Acyclic Graph (GDAG) models. It can be used for
+construction of efficient MCMC schemes for inference in large linear
+models, or for Bayes linear analysis of large stochastic systems.
+
+If you are interested in Gaussian Markov Random Fields (GMRFs), you
+should use Havard Rue's GMRFlib library. This software is only for DAG
+models.
+
+The library depends on the GNU Scientific Library (GSL). You will not
+be able to get this software to work unless you already have the GSL
+installed and working correctly.
+
+The current version (0.3) also depends on the Meschach matrix library
+(though no familiarity with that library is assumed). So you will also
+need that installed and working correctly before attempting to install
+GDAGsim.
+
+The software works by building the (sparse) precision matrix for the
+latent (unobserved) variables conditional on any observations, and
+then computing with it. The current system is practical for problems
+involving 10,000 latent (unobserved) variables, but see the
+documentation for hints on the ordering of latent variables.  Versions
+of the library for massively parallel supercomputers are also planned
+(for the analysis of huge spatio-temporal models), but not in the very
+near future.
+
+Installation instructions are given in the file "INSTALL", a user
+guide can be found in the directory "doc", and the examples from the
+user guide can be found in the directory "examples".
+
+If you use the library, find any bugs, have any bug-fixes, comments,
+suggestions etc, please let me know... Thanks to Stephen Yeung for a
+couple of bug reports and fixes.
+
+
+Darren Wilkinson, 21/8/2002
+
+
+d.j.wilkinson@ncl.ac.uk
+
+http://www.staff.ncl.ac.uk/d.j.wilkinson/
+
