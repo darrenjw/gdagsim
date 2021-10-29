@@ -5,7 +5,7 @@ GDAGsim
 
 #### Please note that this repo is an archive of the source of a very old software library that is no longer supported or maintained. It is largely of historical interest.
 
-[gdagsim-03.tgz](raw/main/gdagsim-03.tgz) is the current release of `GDAGsim`.
+[gdagsim-03.tgz](gdagsim-03.tgz) is the current release of `GDAGsim`.
 This is a C library for analysis and block-sampling of Gaussian DAG
 models. Full documentation and installation instructions are included
 with the package - see the README in the top-level directory. To use the
@@ -31,7 +31,7 @@ everything should work fine. I hope to put together binary packages for
 GDAGsim for use with Debian GNU/Linux sometime in the next few months,
 but for now, building from source should be very straightforward.
 
-The latest [documentation](raw/main/Doc/gdag.pdf) is available in PDF format for
+The latest [documentation](Doc/gdag.pdf) is available in PDF format for
 on-line browsing. The theory behind GDAGsim is explained in the
 following paper:
 
