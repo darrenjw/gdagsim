@@ -31,7 +31,7 @@ everything should work fine. I hope to put together binary packages for
 GDAGsim for use with Debian GNU/Linux sometime in the next few months,
 but for now, building from source should be very straightforward.
 
-The latest [documentation](gdag.pdf) is available in PDF format for
+The latest [documentation](Doc/gdag.pdf) is available in PDF format for
 on-line browsing. The theory behind GDAGsim is explained in the
 following paper:
 
